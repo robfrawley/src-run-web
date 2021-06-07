@@ -146,7 +146,8 @@ class EnvCfgUpdateDbVerCommand extends AbstractCommand
             ->depth(0)
             ->ignoreDotFiles(false)
             ->ignoreVCS(true)
-            ->files();
+            ->files()
+    ;
 
         return $finder->hasResults() ? iterator_to_array($finder) : [];
     }

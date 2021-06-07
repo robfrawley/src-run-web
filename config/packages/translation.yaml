@@ -4,3 +4,11 @@ framework:
         default_path: '%kernel.project_dir%/translations'
         fallbacks:
             - '%default_locale%'
+
+        # required for loco
+        enabled_locales: ['%default_locale%']
+        providers:
+            loco:
+                dsn: '%env(LOCO_DSN)%'
+                domains: ['messages']
+                locales: ['%default_locale%']

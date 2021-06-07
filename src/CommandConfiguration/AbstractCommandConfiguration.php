@@ -96,7 +96,8 @@ abstract class AbstractCommandConfiguration implements CommandConfigurationInter
             ->configureCommandDefCustomOpts()
             ->configureCommandDescText()
             ->configureCommandHelpText()
-            ->configureCommandAliasSet();
+            ->configureCommandAliasSet()
+        ;
     }
 
     public function setUpExec(InputInterface $i, OutputInterface $o): AppStyleWrapper

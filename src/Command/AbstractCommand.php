@@ -63,7 +63,8 @@ abstract class AbstractCommand extends Command
     {
         return (new GitVersionResolver('project-level-git'))
             ->resolve()
-            ->getVersion(VersionOptionsInterface::VERSION_THREE | VersionOptionsInterface::VERSION_COMMIT);
+            ->getVersion(VersionOptionsInterface::VERSION_THREE | VersionOptionsInterface::VERSION_COMMIT)
+        ;
     }
 
     public function style(): AppStyleWrapper
